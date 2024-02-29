@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script src="./assets/scripts/main.js" defer></script>
+    <title>Calculando sua idade</title>
+</head>
+<body>
+
+    <form>
+        <h1>Vou descobrir a sua idade!</h1>
+
+        <p>Mas antes me responda:</p>
+
+        <label for="anoDeNascimento">
+            Qual o ano em que vc nasceu?:
+            <input name="anoDeNascimento" id="anoDeNascimento" type="number" min="1900" required>
+        </label>
+
+        <label for="anoAtual">
+            Em que ano estamos?:
+            <input name="anoAtual" id="anoAtual" type="number" min="1900" required>
+        </label>
+
+        <div class="resposta"></div>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+</body>
+</html>
