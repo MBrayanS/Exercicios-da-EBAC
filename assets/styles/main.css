@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #e9f2f9;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    color: #e9f2f9;
+    background-color: #1b325f;
+    display: grid;
+    gap: 32px;
+    padding: 64px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+input {
+    background-color: #30549b;
+    color: #ffffff;
+    border: solid 2px #177cca;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+}
+
+input::placeholder { color: #e9f2f9; }
+
+button {
+    background-color: #177cca;
+    color: #e9f2f9;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lista-de-tarefas {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+}
+
+.tarefa {
+    background-color: #30549b;
+    padding: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tarefa--concluida {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
