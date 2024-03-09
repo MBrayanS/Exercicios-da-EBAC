@@ -11,6 +11,7 @@ $(document).ready(() => {
             nomeCompleto: { required: true },
             email: { required: true, email: true },
             telefone: { required: true, minlength: 15 },
+            endereco: { required: true },
             cpf: { required: true, minlength: 14 },
             cep: { required: true, minlength: 9 }
         },
@@ -28,6 +29,7 @@ $(document).ready(() => {
                 required: modeloDeMensagemParaRequired('CPF'),
                 minlength: modeloDeMensagemParaInvalido('CPF')
             },
+            endereco: modeloDeMensagemParaRequired('endereço'),
             cep: {
                 required: modeloDeMensagemParaRequired('CEP'),
                 minlength: modeloDeMensagemParaInvalido('CEP')
